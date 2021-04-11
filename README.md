@@ -63,5 +63,7 @@ Compare health data vs exposure to waste
 Something to consider: What kind of parameters are we considering when defining the term “recycling?” → Example: Stockholm/Sweden as a whole. Like many European countries, [incineration is defined as a form of “recycling”](https://www.abc.net.au/news/2018-08-14/how-would-burning-rubbish-like-sweden-work-in-australia/10115694#:~:text=Burning%20waste%20releases%20carbon%20dioxide%20at%20much%20higher%20levels%20than,plastic%20isn't%20being%20recycled.&text=was%20wishful%20thinking.-,Up%20to%2086%20per%20cent%20of,in%20Sweden%20are%20being%20incinerated.)
 
 [Greenpeace on Incineration](https://unearthed.greenpeace.org/2020/07/31/waste-incinerators-deprivation-map-recycling/)
+
 [17 Sustainable Goals from United Nations](https://sdgs.un.org/goals): See goals 6, 11, 12, 13 for possibly pertinent information
+
 [Air Pollution](https://www.who.int/health-topics/air-pollution#tab=tab_1)
