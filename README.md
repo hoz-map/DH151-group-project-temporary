@@ -13,7 +13,7 @@ Our group is for addressing global waste management and environmental health iss
 **Emily**: Emily (she.her)
  is a fourth year English/History double major and Digital Humanities minor. She is interested in the history and language behind public health and using digital tools to present information effectively. 
 
-<img width="200" alt="Screen Shot 2021-04-11 at 13 03 27" src="https://user-images.githubusercontent.com/74166310/114319441-77db6080-9ac6-11eb-8c45-31d4d329defe.png">
+<img width="296" alt="Screen Shot 2021-04-11 at 13 03 27" src="https://user-images.githubusercontent.com/74166310/114319441-77db6080-9ac6-11eb-8c45-31d4d329defe.png">
 
 **Hozumi**: Hozumi(she/her) is a fourth-year Sociology major and Global Health/Digital Humanities double minor. She is interested in using digital mapping to address global public health issues.
 
@@ -49,4 +49,13 @@ StoryMaps to lay out the narrative and mapping components of our project
 2. [World Development Indicators](https://datacatalog.worldbank.org/dataset/world-development-indicators) from the World Bank
 3. [Recycling Organisations and Collection Points in Hong Kong](https://opendata.esrichina.hk/datasets/recycling-organisations-and-collection-points-in-hong-kong-1/data?geometry=113.820%2C22.258%2C114.426%2C22.480)
 *Notable, since “Collectively, China and Hong Kong have imported 72.4 percent of global traded plastic waste (with most imports to Hong Kong eventually reaching China)” ([source](https://ourworldindata.org/plastic-pollution))*
-4. [17 Sustainable Goals from United Nations](https://sdgs.un.org/goals)
+
+# Further resources
+Take a stance / analyze the issue → i.e. compare rates of disease within communities that deal with the waste 
+Compare health data vs exposure to waste
+
+Something to consider: What kind of parameters are we considering when defining the term “recycling?” → Example: Stockholm/Sweden as a whole. Like many European countries, [incineration is defined as a form of “recycling”](https://www.abc.net.au/news/2018-08-14/how-would-burning-rubbish-like-sweden-work-in-australia/10115694#:~:text=Burning%20waste%20releases%20carbon%20dioxide%20at%20much%20higher%20levels%20than,plastic%20isn't%20being%20recycled.&text=was%20wishful%20thinking.-,Up%20to%2086%20per%20cent%20of,in%20Sweden%20are%20being%20incinerated.)
+
+[Greenpeace on Incineration](https://unearthed.greenpeace.org/2020/07/31/waste-incinerators-deprivation-map-recycling/)
+[17 Sustainable Goals from United Nations](https://sdgs.un.org/goals): See goals 6, 11, 12, 13 for possibly pertinent information
+[Air Pollution](https://www.who.int/health-topics/air-pollution#tab=tab_1)
