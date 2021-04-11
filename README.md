@@ -5,10 +5,12 @@ Our group is for addressing global waste management and environmental health iss
 
 # Team members: 
 ![alice avatar](https://user-images.githubusercontent.com/62718306/114319142-2c34b100-9ade-11eb-9005-eb8c0e71cd2d.png)
+
 **Alice**: Alice (she/her) is a fourth year Human Biology & Society and Sociology double major. She is interested in public health and environmental justice and is looking forward to working with both academic research with web mapping in this project.
 
 **Emily**: Emily is a fourth year English/History double major and Digital Humanities minor. She is interested in the history and language behind public health and using digital tools to present information effectively. 
 
+![alt text](https://www.internationalcenter.ucla.edu/Portals/104/Images/Ambassadors/EastAsia/27-IMG_8383%202.jpg)
 **Hozumi**: Hozumi(she/her) is a fourth-year Sociology major and Global Health/Digital Humanities double minor. She is interested in using digital mapping to address global public health issues.
 
 # Overview: 
