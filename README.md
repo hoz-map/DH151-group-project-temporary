@@ -4,6 +4,7 @@ Group name: Rethink Recycling
 Our group is for addressing global waste management and environmental health issues with digital tools.
 
 # Team members: 
+![alice avatar](https://user-images.githubusercontent.com/62718306/114319142-2c34b100-9ade-11eb-9005-eb8c0e71cd2d.png)
 **Alice**: Alice (she/her) is a fourth year Human Biology & Society and Sociology double major. She is interested in public health and environmental justice and is looking forward to working with both academic research with web mapping in this project.
 
 **Emily**: Emily is a fourth year English/History double major and Digital Humanities minor. She is interested in the history and language behind public health and using digital tools to present information effectively. 
