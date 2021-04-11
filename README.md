@@ -4,7 +4,7 @@ Group name: Rethink Recycling
 Our group is for addressing global waste management and environmental health issues with digital tools.
 
 # Team members: 
-![alice avatar](https://user-images.githubusercontent.com/62718306/114319142-2c34b100-9ade-11eb-9005-eb8c0e71cd2d.png)
+![alice image](https://user-images.githubusercontent.com/62718306/114319387-576bd000-9adf-11eb-85fc-695019d2c863.png)
 
 **Alice**: Alice (she/her) is a fourth year Human Biology & Society and Sociology double major. She is interested in public health and environmental justice and is looking forward to working with both academic research with web mapping in this project.
 
