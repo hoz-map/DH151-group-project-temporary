@@ -13,7 +13,7 @@ Our group is for addressing global waste management and environmental health iss
 **Emily**: Emily (she.her)
  is a fourth year English/History double major and Digital Humanities minor. She is interested in the history and language behind public health and using digital tools to present information effectively. 
 
-<img width="296" alt="Screen Shot 2021-04-11 at 13 03 27" src="https://user-images.githubusercontent.com/74166310/114319441-77db6080-9ac6-11eb-8c45-31d4d329defe.png">
+<img width="200" alt="Screen Shot 2021-04-11 at 13 03 27" src="https://user-images.githubusercontent.com/74166310/114319441-77db6080-9ac6-11eb-8c45-31d4d329defe.png">
 
 **Hozumi**: Hozumi(she/her) is a fourth-year Sociology major and Global Health/Digital Humanities double minor. She is interested in using digital mapping to address global public health issues.
 
