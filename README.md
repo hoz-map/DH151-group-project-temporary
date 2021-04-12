@@ -1,6 +1,8 @@
 # Rethink-Recycling
-Introduction: 
-Group name: Rethink Recycling
+
+# Introduction: 
+**Group name**: Rethink Recycling
+
 Our group is for addressing global waste management and environmental health issues with digital tools.
 
 # Team members: 
