@@ -49,7 +49,7 @@
   **Alice:** I like how Hozumi breaks down our research topic into subcategories of global waste and case studies, as well as general waste and plastic waste. I think this would translate well into the breakdown of our site design.
   
   
-  **Emily:** 
+  **Emily:** The topic shift from macro to micro is what appeals to me about this mindmap; I also like the transition from a general sketch of ideas to actually thinking about what the final product will look like-- breaking down the brainstorming aspect of it and turning it into a list will help us in the formation of the website's layout.
   
  
 ## Crazy Eights
