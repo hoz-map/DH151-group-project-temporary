@@ -45,6 +45,7 @@
 <p align="center">
   <img width="500" src="https://user-images.githubusercontent.com/62718306/116008426-7475c800-a5e2-11eb-92ff-f8e21e923939.png">
 </p>
+ 
  **Hozumi's Notes:** My map is focusing on listing our potential topics in waste management. I hope we can narrow down our focus on the topic.
 
 
@@ -80,14 +81,16 @@
   **Alice:** I really like the linear design of the page, as well as the extras! I think embedding media such as videos and music can be very helpful for our narrative as well. 
   
   
-  **Hozumi:** 
+  **Hozumi:** I really like how Emily considers details of our page, such as the format, music, and color scheme of the page. These details would help us create a better web page!
+  
+  
   
 ### Hozumi:
 <p align="center">
   <img width="500" src="https://user-images.githubusercontent.com/62718306/116008358-206ae380-a5e2-11eb-9fc0-b093929dbcc3.png">
 </p>
   
-  **Hozumi's Notes:** 
+  **Hozumi's Notes:** I was only thinking about the larger picture of the page, so I really appreciate Alice and Emily for the detailed ideas. (Also I was not able to come up with an 8th image, so mine is crazy 7.)
   
   
   **Alice:** I really like how these ideas all are very wire-frame-like. I like the modular design which is still diverse enough at each stage to be engaging. I also like the About Us section that can make our page more personable.
