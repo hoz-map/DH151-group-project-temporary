@@ -45,6 +45,8 @@
 <p align="center">
   <img width="500" src="https://user-images.githubusercontent.com/62718306/116008426-7475c800-a5e2-11eb-92ff-f8e21e923939.png">
 </p>
+ **Hozumi's Notes:** My map is focusing on listing our potential topics in waste management. I hope we can narrow down our focus on the topic.
+
 
   **Alice:** I like how Hozumi breaks down our research topic into subcategories of global waste and case studies, as well as general waste and plastic waste. I think this would translate well into the breakdown of our site design.
   
