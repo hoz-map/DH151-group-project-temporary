@@ -163,7 +163,7 @@ This data will be downloaded and geocoded with a GoogleSheets plugin. This will 
   <img width="500" src="https://user-images.githubusercontent.com/62718306/116008725-fb777000-a5e3-11eb-8831-6c9366fc1f0b.jpg">
 </p>
 
-We aim to use a long scroll format for our website so that we have better control of the fluidity of our narrative. The overall direction of our website will be one that starts with an introduction to the topic a broad overview of the situation, and then individual case studies that look into other elements. 
+We aim to use a long scroll format for our website so that we have better control of the fluidity of our narrative. The overall direction of our website will be one that starts with an introduction to the topic a broad overview of the situation, and then individual case studies that look into other elements. For navigation purposes, we will likely add an "elevator" button to allow readers to scroll back to the top of the website, as well as icons that are appropriately themed.
 
 <p align="center">
   <img width="600" src="https://user-images.githubusercontent.com/62718306/116009203-2f539500-a5e6-11eb-9715-f122a32c253f.png">
