@@ -1,0 +1,72 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+body {
+    display: grid;
+	grid-template-rows: 100px 1fr;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+	grid-template-areas: 
+	"header header header"
+    "sidebar sidebar sidebar "
+    "howto howto howto"
+    "gallery gallery gallery";
+}
+
+.header {
+	grid-area: header;
+	padding:10px;
+    background-color: rgb(98, 173, 148);
+}
+.sidebar {
+	grid-area: sidebar;
+	padding:10px;
+    background-color: rgb(220, 243, 234);
+    /*overflow-x: hidden; /* Hide horizontal scrollbar */
+    /*overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+.howto {
+    grid-area: howto;
+    padding: 10px;
+    background-color:  rgb(220, 243, 234);
+}
+
+.background {
+    grid-area: body;
+    padding: 10px;
+    background-color: #777;
+}
+
+.font1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.font2{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+  }
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
