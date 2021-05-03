@@ -45,7 +45,7 @@ We will be using *Leaflet* to visualize our maps. *Git* and *Visual Studio Code 
 
 
 # Data: 
-**Set 1: DH151_Waste Generation **
+**Set 1: DH151_Waste Generation**
 
 URL: (https://docs.google.com/spreadsheets/d/1TKgcbI5DOFvSAqtAb1f6eDQ3MtZJR6lwde7G3_o5WJY/edit?usp=sharing) 
 
@@ -57,13 +57,13 @@ URL: https://unstats-undesa.opendata.arcgis.com/datasets/indicator-11-6-1-munici
 
 This data includes information about the percentage of municipal waste being collected and managed in controlled facilities, out of the entire waste generated in each city. This data will be downloaded from the UN SDG indicators page, and data from 2015 and 2017 (2016 is not included in the dataset) will be visualized on the map. The visibility of this data can be toggled.
 
-**Set 3: UN Comtrade Data: 2016 and 2017 China, HK, USA import and export plastic **
+**Set 3: UN Comtrade Data: 2016 and 2017 China, HK, USA import and export plastic**
 
 URL: https://comtrade.un.org/data/ 
 
 Data on the import and export of plastic wastes will be downloaded from this page; countries involved will be determined at a later date. The countries will be geocoded with a GoogleSheets plugin. Import and export data can be added to separate layers and can be turned on/off to see differences in which countries export versus import plastic wastes.
 
-**Set 4 : China statistical yearbook 2017: Collection, transport, and disposal of consumption wastes in cities by region (2016) **
+**Set 4 : China statistical yearbook 2017: Collection, transport, and disposal of consumption wastes in cities by region (2016)**
 
 URL: http://www.stats.gov.cn/tjsj/ndsj/2017/indexeh.htm 
 
