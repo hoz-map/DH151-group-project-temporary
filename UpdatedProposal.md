@@ -1,5 +1,6 @@
 # Introduction: 
 **Group name:** Rethink Recycling
+
 **Goal:** Exploring the intersection of global waste management and health.
 
 # Team members:
