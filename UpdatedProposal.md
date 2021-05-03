@@ -163,9 +163,11 @@ This data will be downloaded and geocoded with a GoogleSheets plugin. This will 
   <img width="500" src="https://user-images.githubusercontent.com/62718306/116008725-fb777000-a5e3-11eb-8831-6c9366fc1f0b.jpg">
 </p>
 
-We aim to use a long scroll format for our website so that we have better control of the fluidity of our narrative.
+We aim to use a long scroll format for our website so that we have better control of the fluidity of our narrative. The overall direction of our website will be one that starts with an introduction to the topic a broad overview of the situation, and then individual case studies that look into other elements. 
 
 <p align="center">
   <img width="600" src="https://user-images.githubusercontent.com/62718306/116009203-2f539500-a5e6-11eb-9715-f122a32c253f.png">
 </p>
+
+We aim to segregate the different topics by using a color scheme to split up the different topics. Each section will likely include a map and an explanation that explains the mechanics of the map better.
 
