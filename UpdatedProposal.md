@@ -69,8 +69,10 @@ URL: http://www.stats.gov.cn/tjsj/ndsj/2017/indexeh.htm
 
 This data will be downloaded and geocoded with a GoogleSheets plugin. This will then be mapped onto China with pop-ups to visualize the location of each city, as well as the amount of waste it produces in comparison to other cities. This will all be a layer that can be turned on/off, and will offer a more country-specific snapshot of what waste management looks like in China.
 
-UX:
+# UX:
 
-
+<p align="center">
+  <img width="460" height="300" src="https://github.com/hoz-map/Rethink-Recycling/blob/main/DH151:%20Week%204%20Group%20Storyboard-Page-1.png?raw=true">
+</p>
 
 
