@@ -5,12 +5,15 @@ Goal: Exploring the intersection of global waste management and health.
 # Team members:
 
 ![alice image](https://user-images.githubusercontent.com/62718306/114319387-576bd000-9adf-11eb-85fc-695019d2c863.png)
+
 **Alice:** Alice (she/her) is a fourth year Human Biology & Society and Sociology double major. She is interested in public health and environmental justice and is looking forward to working with both academic research with web mapping in this project.
 
 ![OverwatchPachilantern](https://user-images.githubusercontent.com/81576716/114319332-da802c80-9ac5-11eb-81db-85b64261639f.png)
+
 **Emily:** Emily (she/her) is a fourth year English/History double major and Digital Humanities minor. She is interested in the history and language behind public health and using digital tools to present information effectively. 
 
 <img width="200" alt="Screen Shot 2021-04-11 at 13 03 27" src="https://user-images.githubusercontent.com/74166310/114319441-77db6080-9ac6-11eb-8c45-31d4d329defe.png">
+
 **Hozumi:** Hozumi(she/her) is a fourth-year Sociology major and Global Health/Digital Humanities double minor. She is interested in using digital mapping to address global public health issues.
 
 # Overview: 
