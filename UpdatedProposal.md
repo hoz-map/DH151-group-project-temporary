@@ -169,5 +169,5 @@ We aim to use a long scroll format for our website so that we have better contro
   <img width="600" src="https://user-images.githubusercontent.com/62718306/116009203-2f539500-a5e6-11eb-9715-f122a32c253f.png">
 </p>
 
-We aim to segregate the different topics by using a color scheme to split up the different topics. Each section will likely include a map and an explanation that explains the mechanics of the map better.
+We also aim to segregate the different topics by using a color scheme to split up the different topics. Each section will likely include a map and an explanation that explains the mechanics of the map better.
 
