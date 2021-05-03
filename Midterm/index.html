@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rethink Recycle</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- papaparse for csv data -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		<b>Global plastic waste from the United States</b>
+	</div>
+	<div class="sidebar">
+		The countries below have all been a partner with the United States in plastic waste trade. They have imported plastic waste from the U.S. between the years of 2016, 2017, or 2018.
+		<br>
+		Click on a partner country to zoom in. 
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+	<div class="footer">
+		Data source: <a href="https://comtrade.un.org/data/">UN Comtrade</a>
+	</div>
+
+	<script src="js/map.js"></script>
+
+</body>
+</html>
