@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rethink Recycle</title>
+	<meta charset="utf-8" />
+  <link rel= "icon" href = "images/RETHINK RECYCLE LOGO1.png">
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="js/leaflet-providers.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- papaparse for csv data -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+  <!-- Ant-Path -->
+  <!--<script src="https://unpkg.com/leaflet" ></script>-->
+  <script src="https://unpkg.com/leaflet-ant-path" ></script>
+
+
+  <!-- classy brew -->
+	<script src="js/classybrew.js"></script>
+
+  <!-- js-grid -->
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<!-- TOP NAVIGATION BAR -->
+	<div class="header">
+    <nav class="font1">
+      <ul>
+        <li><a href="#GLOBAL-MAP">Global Map</a></li> 
+        <li><a href="#CHORO-MAP">Impact Map</a></li>
+        <li><a href="#LANDFILL-MAP">Landfills</a></li>
+        <li><a href="#ABOUT-US">About the Team</a></li>
+      </ul>
+    </nav>
+    <img src="images/RETHINK RECYCLE LOGO1.png" alt="logo" style="height:150px;" class="center">
+		<!--<h1 class="font0">RETHINK RECYCLE</h1>-->
+	</div>
+
+
+
+<!-- FLOATING SIDE NAVIGATION -->
+  <div class="sidenav">
+    <a class = "font3" href="#">Top</a>
+    <a class = "font3" href="#GLOBAL-MAP">Global</a>
+    <a class = "font3" href="#CHORO-MAP">Impact</a>
+    <a class = "font3" href="#LANDFILL-MAP">Landfills</a>
+    <a class = "font3" href="#ABOUT-US">About</a>
+  </div>
+
+
+
+<!-- THE GLOBAL IMPACT OF WASTE -->
+	<div class="sidebar">
+    <h2 class = "font1">THE GLOBAL IMPACT OF WASTE</h2>
+    <p class="font2">
+      The goal of Rethink Recycle is to help users understand the scope of the global waste-management network. While many of us are able to sort our plastic waste and hope that it is in fact recycled and repurposed, the truth is that the recycling process is not so straightforward. For instance, the United States only recycles a fraction of its plastic waste and instead exports a large amount of it to countries across the globe. 
+      <br>
+      While countries differ in the way they manage their own waste, these practices also all have different effects on both human and environmental health; one such consequence is that mismanaged plastic waste has been shown to increase risk of cardiovascular disease and affect access to potable water. Therefore, the true impact of plastic waste goes beyond sorting one’s recycling, and our goal is that Rethink Recycle will make this reality clearer.
+    </p>	
+  </div>
+
+
+
+<!-- HOW TO SECTION -->
+  <div class = "howto">
+    <h2 class="font1">HOW TO USE</h2>
+    <p class = "font2">
+      The Rethink Recycle map shows the global trade of plastic waste that the United States engaged in between the years of 2016 to 2018. 
+      <br>
+      Click on a year in the sidebar to show the United States' network of plastic waste trade in the world for that given year. 
+      <br>
+      Hover over a circle to view the popup that will include the country name and the amount of plastic waste being transported. All circle sizes are proportional to the amount of plastic transported.
+      <br>
+      Click on a country to zoom in.
+    </p>
+  </div>
+
+
+
+<!-- GLOBAL MAPROOM -->
+  <div class="mapheader">
+    <a id="GLOBAL-MAP"></a>
+		<h1 class= "font0"> THE UNITED STATES & GLOBAL PLASTIC</h1>
+	</div>
+ 
+  <div class="mapsidebar">
+		<p class = "font2">Click on a year to view the United States' export of plastic waste across the world. Countries with larger circle markers reported receiving a higher amount of plastic waste from the United States. 
+      <br>
+      Click on a country on the map to zoom in.
+      <br>
+      <br>
+      The table below shows all countries that received plastic waste exports from the United States, and can be sorted by Year, Partner Country, and the amount of plastic being moved.
+      <br>
+      Click on a table entry to view the country on the map.
+    </p>
+	</div>
+
+	<div class="mapcontent">
+		<div id="map"></div>
+	</div>
+
+	<div class="mapfooter">
+  <p class = "font2">
+    Data source: <a href="https://comtrade.un.org/data/">UN Comtrade</a>
+  </p>
+	</div>
+
+	<script src="js/map.js"></script>
+
+
+
+<!-- TABLE -->
+	<div class="tablefooter">
+  </div>
+
+
+
+<!-- GLOBAL MAP WRITEUP -->
+<div class="globalmapwriteup">
+  <h2 class = "font1"> WHAT DOES THIS SHOW? </h2>
+  <p  class = "font2">
+    This graph examines not only the volume of plastic that is exported from the United States alone each year, but also highlights the primary importers of plastic waste. What’s interesting to note is that in all three years, <mark>Canada consistently remains one of the biggest importers of the US’s plastic waste,</mark> likely due to the proximity of the two countries. Other notable trends that are consistent throughout all three years are that <mark>the US exports large volumes of plastic waste to East and Southeast Asia</mark> and that although there are exports to Europe and South America, these are not as significant. 
+  <br>
+  <br>
+    Breaking down the map further shows other interesting patterns. <mark>The most eye-catching trend would be in 2017, in which there was a sudden uptick in exporting plastic waste to China. [insert src]</mark> This rise is notable due to both the volume of plastic waste exported (no other country matches the amount in any of the three years) and due to the abruptness in the trend -- it was only something that occurred in 2017. Other notable elements include the <mark>increase of plastic waste export in Malaysia;</mark> while Malaysia was merely a minor importer of US plastic waste in 2016, it rapidly grew to become one of the larger importers in 2017 and 2018. 
+  <br>
+  <br>
+    Overall, all three years show that the <mark>exportation of the United States’s plastic waste is very global in nature.</mark> Though the individual countries and the volume may change from year to year, what this graph highlights is that the United States acts as a huge distributor of plastic. Not only does this affect how waste travels on a surface level, but there are also many underlying factors (such as economic, environmental, etc) that are affected as a result. 
+  </p>
+</div>
+
+
+
+<!-- CHOROPLETH MAPROOM -->
+  <div class="choroheader">
+    <a id="CHORO-MAP"></a>
+		<h1>IMPACT MAP</h1>
+	</div>
+
+  <div class="chorosidebar">
+		<p class = "font2">This map shows the amount of plastic waste that are mismanaged in each country. Hover over a country to see the amount of mismanaged plastic waste.
+      <br>
+      Plastics contain toxic chemicals, which are phthalates, poly-fluorinated chemicals, bisphenol A (BPA), brominated flame retardants, and antimony trioxide. 
+			Therefore, mismanaged plastic waste can pollute the environment. 
+			The pollutions in water and air increase the risk of health issues, such as cardiovascular diseases (CVD), neurobehavioral disorders, and reproductive health issues.
+			This is why it is important to raise awareness towards mismanaged plastic waste in the world. (<a href="https://clinmedjournals.org/articles/ijtra/international-journal-of-toxicology-and-risk-assessment-ijtra-5-021.php?jid=ijtra">Alabi et.al., 2019</a>) </p>
+    </p>
+	</div>
+
+	<div class="chorocontent">
+		<div id="choromap"></div>
+	</div>
+
+	<div class="chorofooter">
+  <p class = "font2">
+    Data source: <a href="https://science.sciencemag.org/content/suppl/2015/02/11/347.6223.768.DC1">American Association for the Advancement of Science</a>
+  </p>
+	</div>
+
+	<script src="js/workingchoromap.js"></script>
+
+
+<!-- TAKE ACTION -->
+<div class="takeactionheader">
+    <a id="TAKE-ACTION"></a>
+    <h1>TAKE ACTION</h1>
+</div>
+
+<div class="takeaction1intro">
+    <h2>Simple changes to reduce plastic footprint:</h2>
+</div>
+
+
+<div class="takeaction1main">
+    <div class="gallery">
+        <img src="images/reusable.jpg" alt="Reusable Products" width="600" height="400">
+        <p class = "font2">
+            1. Carry reusable products (e.g. bottle, utensils, and bag)
+        </p>
+    </div> 
+    <div class="gallery">
+        <img src="images/thrift.jpg" alt="Thrift Store" width="600" height="400">
+        <p class = "font2">
+            2. Buy clothes at second-hand stores
+        </p>
+    </div>
+    <div class="gallery">
+        <img src="images/support.jpg" alt="Support Organizations" width="600" height="400">
+        <p class = "font2">
+            3. Support organizations (e.g. donation and volunteer)
+        </p>
+    </div>
+</div>
+
+<div class="takeaction2intro">
+    <h2>List of Organizations:</h2>
+    <h3>For Plastic Management:</h3>
+</div>
+
+<div class="takeaction2main">
+    <div class="gallery">
+        <a href="https://www.plasticpollutioncoalition.org/">
+            <img src="images/plasticpollutioncoalition.png" alt="Plastic Pollution Coalition" width="800" height="400">
+        </a>
+        <p class = "font2">
+            Plastic Pollution Coalition
+        </p>
+    </div> 
+    <div class="gallery">
+        <a href="https://www.5gyres.org/">
+            <img src="images/5gyres.png" alt="5Gyres" width="800" height="400">
+        </a>
+        <p class = "font2">
+            5Gyres
+        </p>
+    </div>
+    <div class="gallery">
+        <a href="https://algalita.org/">
+            <img src="images/Algalita.png" alt="Algalita" width="800" height="400">
+        </a>
+        <p class = "font2">
+            Algalita
+        </p>
+    </div>
+    <div class="gallery">
+        <a href="https://www.plasticsoupfoundation.org/en/">
+            <img src="images/Plastic Soup.png" alt="Plastic Soup Foundation" width="800" height="400">
+        </a>
+        <p class = "font2">
+            Plastic Soup Foundation
+        </p>
+    </div>
+    <div class="gallery">
+        <a href="https://www.surfrider.org/">
+            <img src="images/Surfrider.png" alt="Surfrider Foundation" width="800" height="400">
+        </a>
+        <p class = "font2">
+            Surfrider Foundation
+        </p>
+    </div>
+    <div class="gallery">
+        <a href="https://www.plasticbaglaws.org/">
+            <img src="images/plastic bag laws.png" alt="Plastic Bag Laws.ORG" width="800" height="400">
+        </a>
+        <p class = "font2">
+            Plastic Bag Laws.ORG
+        </p>
+    </div>
+</div>
+
+<div class="takeaction3intro">
+    <h3>For Water Management:</h3>
+</div>
+
+<div class="takeaction3main">
+    <div class="gallery">
+        <a href="https://www.wateraid.org/us/">
+            <img src="images/wateraid.png" alt="WaterAid" width="800" height="400">
+        </a>
+        <p class = "font2">
+            WaterAid
+        </p>
+    </div> 
+    <div class="gallery">
+        <a href="https://www.worldwatercouncil.org/en">
+            <img src="images/World Water Council.png" alt="World Water Council" width="800" height="400">
+        </a>
+        <p class = "font2">
+            World Water Council
+        </p>
+    </div>
+    <div class="gallery">
+        <a href="https://www.charitywater.org/">
+            <img src="images/charitywater.png" alt="charity : water" width="800" height="400">
+        </a>
+        <p class = "font2">
+            charity : water
+        </p>
+        
+    </div>
+</div>
+
+
+<!-- ABOUT THE TEAM -->
+<div class="footer">
+  <a id="ABOUT-US"></a>
+    <div class="gallery">
+        <img src="images/alice.png" alt="Alice" width="600" height="400">
+        <p class = "font2">
+        Alice (she/her) is a fourth year Human Biology & Society and Sociology double major. She is interested in public health and environmental justice and is looking forward to working with both academic research and web-mapping.
+        </p>
+    </div>
+    <div class="gallery">
+      <img src="images/emily.png" alt="Emily" width="600" height="400">
+      <p class = "font2">
+          Emily (she/her) is a fourth year English/History double major and Digital Humanities minor. She is interested in the history and language behind public health and using digital tools to present information effectively.
+      </p>
+    </div>
+    <div class="gallery">
+      <img src="images/hozumi.png" alt="Hozumi" width="600" height="400">
+      <p class = "font2">
+          Hozumi (she/her) is a fourth-year Sociology major and Global Health/Digital Humanities double minor. She is interested in using digital mapping to address global public health issues.
+      </p>
+    </div> 
+  </div>
+
+
+  
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/alice.png" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/emily.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/hozumi.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+<!-- SCRIPT FOR MAKING SLIDESHOW -->
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+<!-- LANDFILLS MAP-->
+<div class="landfillsheader">
+  <a id="LANDFILL-MAP"></a>
+  <h1 class= "font0"> GLOBAL LANDFILLS</h1>
+</div>
+
+
+<div class="landfillssidebar"></div>
+
+
+<div class="landfillsintro">
+  <p class = "font2">
+    It is clear that mismanaged waste from inadequate plastic recycling infrastructures can cause a variety of downstream effects. This includes increased rates of deaths due to cardiovascular disease as in _____________, and negatively-impacted potable water access such as in _________________.
+    <br>
+    <br>
+    These are the 11 largest landfills in the world; they are spread across the globe although they cluster in Asia. This finding is fitting with the understanding of how global plastic waste networks flow usually from West to East. 
+    <br>
+    <br>
+    Hover over a point to learn more about the size of each landfill, how much waste they receive daily, and other information about their operation.
+  </p>
+</div>
+  
+<div class="landfillscontent">
+  <div id="landfillsmap"></div>
+</div>
+<div class="landfillsfooter">
+  <p class = "font2">
+  Source: <a href="https://wasteadvantagemag.com/largest-landfills-waste-sites-and-trash-dumps-in-the-world/">Waste Advantage Magazine</a> and <a href="https://www.bbc.com/news/world-asia-50429119">BBC</a>
+</p>
+</div>
+
+<script src="js/landfills.js"></script>
+
+</body>
+</html>
