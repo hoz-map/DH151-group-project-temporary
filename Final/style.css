@@ -1,0 +1,524 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+#map {
+	height: 100%;
+}
+
+body {
+  display: grid;
+	grid-template-rows: 220px 1fr 135px 65% 1fr 1fr 1fr 1fr 1fr 1fr 135px 65% 1fr 1fr 135px 1fr 65% 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	  "header header header"
+    "sidebar sidebar sidebar"
+    "mapheader mapheader mapheader"
+    "mapcontent mapcontent mapsidebar"
+    "tablefooter tablefooter tablefooter"
+    "mapfooter mapfooter mapfooter"
+    "globalmapwriteup globalmapwriteup globalmapwriteup"
+    "casestudyheader casestudyheader casestudyheader"
+    "casestudy1 casestudy1 casestudy1"
+    "casestudy2 casestudy2 casestudy2"
+    "choroheader choroheader choroheader"
+    "chorosidebar chorocontent chorocontent"
+    "chorofooter chorofooter chorofooter"
+    "choromapwriteup choromapwriteup choromapwriteup"
+    "landfillsheader landfillsheader landfillsheader"
+    "landfillsintro landfillsintro landfillsintro"
+    "landfillscontent landfillscontent landfillscontent"
+    "landfillsfooter landfillsfooter landfillsfooter"
+    "takeactionheader takeactionheader takeactionheader"
+    "takeaction1intro takeaction1intro takeaction1intro"
+    "takeaction1main takeaction1main takeaction1main"
+    "takeaction2intro takeaction2intro takeaction2intro"
+    "takeaction2main takeaction2main takeaction2main"
+    "takeaction3intro takeaction3intro takeaction3intro"
+    "takeaction3main takeaction3main takeaction3main"
+    "footerheader footerheader footerheader"
+    "footer footer footer"
+    "references references references"
+}
+
+
+.font0 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(89, 124, 80);}
+.font1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;}
+.font2{font-family: 'Roboto', sans-serif; 
+    text-align: center;}
+.font3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: left;}
+.font4 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(89, 124, 80);}
+mark {
+    background-color: rgb(149, 207, 131);
+    opacity: 60%;}
+mark2{
+  background-color: rgb(176, 240, 220);
+  opacity: 60%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+  color:rgb(134, 134, 134);
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0px 20px;
+}
+li{
+  display: inline;
+  padding: 14px;
+}
+a{
+  text-decoration: none;
+  color:rgb(89, 124, 80);
+}
+a:hover{
+  color:rgb(28, 49, 23);
+  text-decoration: bold;
+}
+
+
+/* TOP OF PAGE */
+.header {
+	grid-area: header;
+	padding:10px;
+  background-color: rgb(238, 253, 220);
+}
+
+.sidebar {
+	grid-area: sidebar;
+	padding:10px 18% 10px 18%;
+  background-color: rgb(238, 253, 220);
+  text-align: center;
+  color: rgb(134, 134, 134);
+}
+
+
+/* GLOBAL NETWORK MAP */
+.mapheader {
+	grid-area: mapheader;
+	padding:10px;
+	background-color:rgb(211, 245, 158);
+	color: rgb(134, 134, 134);
+	text-align: center;
+}
+
+.mapsidebar {
+  grid-area: mapsidebar;
+  color: rgb(97, 97, 97);
+  padding-left:5px;
+  padding-right:50px;
+	background-color: rgb(211, 245, 158);
+	overflow: auto;
+}
+
+.mapcontent {
+	grid-area: mapcontent;
+  padding-left:100px;
+	background-color: rgb(211, 245, 158);
+}
+
+.sidebar-item{
+	padding: 3px;
+  border-radius: 50px;
+	background:white;
+  opacity:70%;
+	margin: 5px;
+	color:gray;
+}
+
+.sidebar-item:hover{
+  opacity:90%;
+  cursor: pointer;
+}
+
+.tablefooter {
+  grid-area: tablefooter;
+  padding-left: 100px;
+  color: rgb(97, 97, 97);
+	background-color: rgb(211, 245, 158);
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mapfooter {
+	grid-area: mapfooter;
+	padding:10px;
+	background-color: rgba(212, 245, 158, 0.473);
+  color: rgb(134, 134, 134);
+}
+
+.globalmapwriteup {
+  grid-area: globalmapwriteup;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: rgb(97, 97, 97);
+  background-color: rgb(211, 245, 158);
+}
+
+/* CASE STUDIES */
+.casestudyheader {
+  grid-area: casestudyheader;
+  color: rgb(70, 131, 106);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 22px;
+	padding:10px;
+  background-color: rgb(155, 218, 169);
+}
+
+.casestudy1 {
+  grid-area: casestudy1;
+	color: rgb(63, 63, 63);
+  background-color: rgb(155, 218, 169);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+
+.casestudy2 {
+  grid-area: casestudy2;
+	color: rgb(63, 63, 63);
+  background-color: rgb(155, 218, 169);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+
+div.gallery2 {
+  align-items: stretch;
+    margin: 5px;
+    padding-left: 10;
+    align-content: center;
+    float: left;
+    width: 250px;
+    flex:1;
+    background-color: rgb(155, 218, 169);
+    text-align: center;
+  }
+  
+div.gallery2 img {
+  width: 100%;
+  border-radius: 40px;
+  display: inline-block;
+  list-style: none;
+}
+
+
+/* CHOROPLETH MAP */
+#choromap {
+	height: 100%;
+}
+
+.choroheader {
+  color: rgb(29, 85, 63);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 22px;
+	grid-area: choroheader;
+	padding:10px;
+	background-color: rgb(138, 180, 166);
+}
+
+.chorosidebar {
+	color: rgb(63, 63, 63);
+	grid-area: chorosidebar;
+	padding-left:100px;
+  padding-right:5px;
+	background-color: rgb(138, 180, 166);
+	overflow: auto;
+}
+
+.chorosidebar-item {
+	padding: 3px;
+  border-radius: 50px;
+	background:white;
+  opacity:70%;
+	margin: 5px;
+	color:gray;
+}
+
+.chorosidebar-item:hover {
+  opacity:90%;
+  cursor: pointer;
+}
+
+.chorocontent {
+	grid-area: chorocontent;
+}
+
+.chorofooter {
+	grid-area: chorofooter;
+	padding:10px;
+	background-color: rgba(138, 180, 166, 0.521);
+  color: rgb(63, 63, 63);
+}
+
+/* choropleth legend styles */
+.choroinfo {
+	padding: 6px 8px;
+	font: 14px/16px 'Roboto', sans-serif;
+	background: rgb(109, 44, 44);
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	min-width: 250px;
+	min-height: 50px;
+}
+
+.choroinfo h4 {
+	margin: 0 0 5px;
+	color: #777;
+}
+
+/* choropleth info panel */
+.legendinfo {
+  padding: 6px 8px;
+  font: 14px 'Roboto', sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  min-width: auto;
+  min-height: auto;
+}
+
+.legend {
+	line-height: 18px;
+	color: #555;
+  text-align: left;
+}
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
+
+.choromapwriteup{
+  grid-area: choromapwriteup;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: rgb(63, 63, 63);
+  background-color: rgb(138, 180, 166);
+}
+
+
+/* LANDFILLS MAP */
+#landfillsmap {
+	height: 100%;
+}
+
+.landfillsheader {
+	grid-area: landfillsheader;
+	padding:10px;
+  background-color: rgb(98, 173, 148);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 23px;
+	color: rgb(19, 116, 78);
+}
+
+.landfillsintro {
+  grid-area: landfillsintro;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgb(161, 219, 200);
+  color: rgb(63, 63, 63);
+}
+
+.landfillscontent {
+	grid-area: landfillscontent;
+  padding-left: 100px;
+  background-color: rgb(161, 219, 200);
+}
+
+.landfillsfooter {
+	grid-area: landfillsfooter;
+	padding:10px;
+	background-color: rgba(138, 180, 166, 0.521);
+  color: rgb(63, 63, 63);
+}
+
+
+/* TAKE ACTION SECTION */
+.takeactionheader {
+  grid-area: takeactionheader;
+  color: rgb(134, 134, 134);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  padding:10px;
+  background-color: rgb(238, 253, 220);
+}
+
+.takeaction1intro {
+  grid-area: takeaction1intro;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  padding-left: 100px;
+  background-color: rgb(238, 253, 220);
+  color: rgb(134, 134, 134);
+}
+
+.takeaction1main {
+  grid-area: takeaction1main;
+  background-color: rgb(238, 253, 220);
+  color: rgb(134, 134, 134);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+
+.takeaction2intro {
+  grid-area: takeaction2intro;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  padding-left: 100px;
+  background-color: rgb(238, 253, 220);
+  color: rgb(134, 134, 134);
+}
+
+.takeaction2main {
+  grid-area: takeaction2main;
+  background-color: rgb(238, 253, 220);
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: rgb(134, 134, 134);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-template-columns: auto auto auto;
+}
+
+.takeaction3intro {
+  grid-area: takeaction3intro;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  padding-left: 100px;
+  background-color: rgb(238, 253, 220);
+  color: rgb(134, 134, 134);
+}
+
+.takeaction3main {
+  grid-area: takeaction3main;
+  background-color: rgb(238, 253, 220);
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: rgb(134, 134, 134);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-template-columns: auto auto auto;
+}
+
+
+/* ABOUT US SECTION */
+.footerheader{
+  grid-area:footerheader;
+  background-color: rgb(238, 253, 220);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(238, 253, 220);
+    color: rgb(134, 134, 134);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;
+}
+
+div.gallery {
+align-items: stretch;
+  margin: 5px;
+  padding-left: 10;
+  padding-top: 5%;
+  align-content: center;
+  float: left;
+  width: 250px;
+  flex:1;
+  background-color: rgb(238, 253, 220);
+  text-align: center;
+}
+
+div.gallery img {
+  width: 100%;
+  border-radius: 40px;
+  height: auto;
+  display: inline-block;
+  list-style: none;
+}
+
+/* REFERENCES */
+.references {
+  grid-area: references;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-family: 'Roboto', sans-serif; 
+  color: rgb(97, 97, 97);
+  text-align: left;
+  background-color: rgb(196, 224, 161);
+}
+
+
+/* SIDEBAR NAVIGATION */
+.sidenav {  
+    width: 75px; /* Set the width of the sidebar */
+    border-radius: 20px;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; 
+    top: 25%; /* Stay at the top */
+    left: 15px;
+    background-color: rgb(255, 255, 255); /* Black */
+    opacity: 70%;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    stroke: red;
+    stroke-width: 20px;
+  }
+
+.sidenav:hover{
+  opacity:100%;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 8px;
+  text-decoration: none;
+  color: rgb(89, 124, 80);
+  display: block;
+}
+
+.sidenav a:hover {
+  color: rgb(28, 49, 23);
+}
