@@ -9,20 +9,23 @@ body,html {
 
 body {
   display: grid;
-	grid-template-rows: 220px 1fr 1fr 135px 65% 1fr 1fr 1fr 135px 65% 1fr 135px 40% 65% 1fr 1fr 1fr;
+	grid-template-rows: 220px 1fr 135px 65% 1fr 1fr 1fr 1fr 1fr 1fr 135px 65% 1fr 1fr 135px 1fr 65% 1fr 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 
 	  "header header header"
     "sidebar sidebar sidebar"
-    "howto howto howto"
     "mapheader mapheader mapheader"
-    "mapsidebar mapcontent mapcontent"
+    "mapcontent mapcontent mapsidebar"
     "tablefooter tablefooter tablefooter"
     "mapfooter mapfooter mapfooter"
     "globalmapwriteup globalmapwriteup globalmapwriteup"
+    "casestudyheader casestudyheader casestudyheader"
+    "casestudy1 casestudy1 casestudy1"
+    "casestudy2 casestudy2 casestudy2"
     "choroheader choroheader choroheader"
     "chorosidebar chorocontent chorocontent"
     "chorofooter chorofooter chorofooter"
+    "choromapwriteup choromapwriteup choromapwriteup"
     "landfillsheader landfillsheader landfillsheader"
     "landfillsintro landfillsintro landfillsintro"
     "landfillscontent landfillscontent landfillscontent"
@@ -34,9 +37,12 @@ body {
     "takeaction2main takeaction2main takeaction2main"
     "takeaction3intro takeaction3intro takeaction3intro"
     "takeaction3main takeaction3main takeaction3main"
+    "footerheader footerheader footerheader"
     "footer footer footer"
-    "slideshow-container slideshow-container slideshow-container";
+    "references references references"
 }
+
+
 .font0 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -51,29 +57,26 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-align: left;}
+.font4 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(89, 124, 80);}
 mark {
     background-color: rgb(149, 207, 131);
     opacity: 60%;}
-
+mark2{
+  background-color: rgb(176, 240, 220);
+  opacity: 60%;
+}
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .leaflet-popup-content-wrapper .leaflet-popup-content {
-    color:rgb(134, 134, 134);
-    text-align: center;
-
-  }
-  
-
-/*h1 {text-align: center;}*/
-
-.header {
-	grid-area: header;
-	padding:10px;
-  background-color: rgb(238, 253, 220);
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+  color:rgb(134, 134, 134);
+  text-align: center;
 }
 ul {
   list-style-type: none;
@@ -84,15 +87,21 @@ li{
   display: inline;
   padding: 14px;
 }
-
-a:link{
+a{
   text-decoration: none;
   color:rgb(89, 124, 80);
 }
-
 a:hover{
   color:rgb(28, 49, 23);
   text-decoration: bold;
+}
+
+
+/* TOP OF PAGE */
+.header {
+	grid-area: header;
+	padding:10px;
+  background-color: rgb(238, 253, 220);
 }
 
 .sidebar {
@@ -101,129 +110,10 @@ a:hover{
   background-color: rgb(238, 253, 220);
   text-align: center;
   color: rgb(134, 134, 134);
-    /*overflow-x: hidden; /* Hide horizontal scrollbar */
-    /*overflow-y: scroll; /* Add vertical scrollbar */
 }
 
 
-* {box-sizing: border-box;}
-.mySlides {
-  display: none;
-}
-
-/* Slideshow container */
-.slideshow-container{
-  grid-area: slideshow-container;
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-
-
-
-
-
-
-
-
-
-.howto {
-  grid-area: howto;
-  padding:10px 18% 10px 18%;
-  background-color:  rgb(238, 253, 220);
-  color: rgb(134, 134, 134);
-  text-align: center;
-}
-
-.background {
-  grid-area: body;
-  padding: 10px;
-  background-color: #777;
-}
-
+/* GLOBAL NETWORK MAP */
 .mapheader {
 	grid-area: mapheader;
 	padding:10px;
@@ -235,14 +125,16 @@ cursor: pointer;
 .mapsidebar {
   grid-area: mapsidebar;
   color: rgb(97, 97, 97);
-	padding-left:100px;
-  padding-right:5px;
+  padding-left:5px;
+  padding-right:50px;
 	background-color: rgb(211, 245, 158);
 	overflow: auto;
 }
 
 .mapcontent {
 	grid-area: mapcontent;
+  padding-left:100px;
+	background-color: rgb(211, 245, 158);
 }
 
 .sidebar-item{
@@ -258,7 +150,6 @@ cursor: pointer;
   opacity:90%;
   cursor: pointer;
 }
-
 
 .tablefooter {
   grid-area: tablefooter;
@@ -283,6 +174,59 @@ cursor: pointer;
   color: rgb(97, 97, 97);
   background-color: rgb(211, 245, 158);
 }
+
+/* CASE STUDIES */
+.casestudyheader {
+  grid-area: casestudyheader;
+  color: rgb(70, 131, 106);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 22px;
+	padding:10px;
+  background-color: rgb(155, 218, 169);
+}
+
+.casestudy1 {
+  grid-area: casestudy1;
+	color: rgb(63, 63, 63);
+  background-color: rgb(155, 218, 169);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+
+.casestudy2 {
+  grid-area: casestudy2;
+	color: rgb(63, 63, 63);
+  background-color: rgb(155, 218, 169);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+
+div.gallery2 {
+  align-items: stretch;
+    margin: 5px;
+    padding-left: 10;
+    align-content: center;
+    float: left;
+    width: 250px;
+    flex:1;
+    background-color: rgb(155, 218, 169);
+    text-align: center;
+  }
+  
+div.gallery2 img {
+  width: 100%;
+  border-radius: 40px;
+  display: inline-block;
+  list-style: none;
+}
+
 
 /* CHOROPLETH MAP */
 #choromap {
@@ -333,7 +277,7 @@ cursor: pointer;
   color: rgb(63, 63, 63);
 }
 
-/* legend styles */
+/* choropleth legend styles */
 .choroinfo {
 	padding: 6px 8px;
 	font: 14px/16px 'Roboto', sans-serif;
@@ -350,18 +294,17 @@ cursor: pointer;
 	color: #777;
 }
 
-
-  /*info panel*/
-  .legendinfo {
-    padding: 6px 8px;
-    font: 14px 'Roboto', sans-serif;
-    background: white;
-    background: rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    min-width: auto;
-    min-height: auto;
-  }
+/* choropleth info panel */
+.legendinfo {
+  padding: 6px 8px;
+  font: 14px 'Roboto', sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  min-width: auto;
+  min-height: auto;
+}
 
 .legend {
 	line-height: 18px;
@@ -376,6 +319,13 @@ cursor: pointer;
 	opacity: 0.7;
 }
 
+.choromapwriteup{
+  grid-area: choromapwriteup;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: rgb(63, 63, 63);
+  background-color: rgb(138, 180, 166);
+}
 
 
 /* LANDFILLS MAP */
@@ -387,22 +337,19 @@ cursor: pointer;
 	grid-area: landfillsheader;
 	padding:10px;
   background-color: rgb(98, 173, 148);
-	color: rgb(220, 243, 234);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 23px;
+	color: rgb(19, 116, 78);
 }
 
 .landfillsintro {
   grid-area: landfillsintro;
   padding-left: 100px;
+  padding-right: 100px;
   background-color: rgb(161, 219, 200);
   color: rgb(63, 63, 63);
 }
-/*.landfillssidebar {
-	grid-area: landfillssidebar;
-	padding-left:100px;
-  padding-top: 10px;
-  background-color: rgb(220, 243, 234);
-	overflow: auto;  auto wraps text to scrollbar
-}*/
 
 .landfillscontent {
 	grid-area: landfillscontent;
@@ -410,20 +357,6 @@ cursor: pointer;
   background-color: rgb(161, 219, 200);
 }
 
-/*.landfillsbackground {
-    grid-area: body;
-    padding: 10px;
-    background-color: #777;
-}*/
-
-/*.landfillssidebar-item{
-	padding: 10px;
-	background: rgb(179, 221, 185);
-	border: 5px solid rgb(255, 255, 255);
-	margin: 5px;
-	color:rgb(0, 0, 0);
-	cursor: pointer; cursor changes to hand when hovering;
-}*/
 .landfillsfooter {
 	grid-area: landfillsfooter;
 	padding:10px;
@@ -434,79 +367,86 @@ cursor: pointer;
 
 /* TAKE ACTION SECTION */
 .takeactionheader {
-    grid-area: takeactionheader;
-    color: rgb(134, 134, 134);
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 22px;
-	padding:10px;
-	background-color: rgb(238, 253, 220);
+  grid-area: takeactionheader;
+  color: rgb(134, 134, 134);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  padding:10px;
+  background-color: rgb(238, 253, 220);
 }
 
 .takeaction1intro {
-    grid-area: takeaction1intro;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    padding-left: 100px;
-    background-color: rgb(238, 253, 220);
-    color: rgb(134, 134, 134);
+  grid-area: takeaction1intro;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  padding-left: 100px;
+  background-color: rgb(238, 253, 220);
+  color: rgb(134, 134, 134);
 }
+
 .takeaction1main {
-    grid-area: takeaction1main;
-    background-color: rgb(238, 253, 220);
-    color: rgb(134, 134, 134);
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    gap: 4px;
-    grid-auto-flow: column;
+  grid-area: takeaction1main;
+  background-color: rgb(238, 253, 220);
+  color: rgb(134, 134, 134);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
 }
 
 .takeaction2intro {
-    grid-area: takeaction2intro;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    padding-left: 100px;
-    background-color: rgb(238, 253, 220);
-    color: rgb(134, 134, 134);
+  grid-area: takeaction2intro;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  padding-left: 100px;
+  background-color: rgb(238, 253, 220);
+  color: rgb(134, 134, 134);
 }
 
 .takeaction2main {
-    grid-area: takeaction2main;
-    background-color: rgb(238, 253, 220);
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    color: rgb(134, 134, 134);
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    gap: 4px;
-    grid-template-columns: auto auto auto;
+  grid-area: takeaction2main;
+  background-color: rgb(238, 253, 220);
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: rgb(134, 134, 134);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-template-columns: auto auto auto;
 }
 
 .takeaction3intro {
-    grid-area: takeaction3intro;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    padding-left: 100px;
-    background-color: rgb(238, 253, 220);
-    color: rgb(134, 134, 134);
+  grid-area: takeaction3intro;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  padding-left: 100px;
+  background-color: rgb(238, 253, 220);
+  color: rgb(134, 134, 134);
 }
 
 .takeaction3main {
-    grid-area: takeaction3main;
-    background-color: rgb(238, 253, 220);
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    color: rgb(134, 134, 134);
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    gap: 4px;
-    grid-template-columns: auto auto auto;
+  grid-area: takeaction3main;
+  background-color: rgb(238, 253, 220);
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: rgb(134, 134, 134);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-template-columns: auto auto auto;
 }
 
+
 /* ABOUT US SECTION */
+.footerheader{
+  grid-area:footerheader;
+  background-color: rgb(238, 253, 220);
+}
+
 .footer{
     grid-area: footer;
     background-color: rgb(238, 253, 220);
@@ -530,6 +470,7 @@ align-items: stretch;
   background-color: rgb(238, 253, 220);
   text-align: center;
 }
+
 div.gallery img {
   width: 100%;
   border-radius: 40px;
@@ -538,13 +479,20 @@ div.gallery img {
   list-style: none;
 }
 
+/* REFERENCES */
+.references {
+  grid-area: references;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-family: 'Roboto', sans-serif; 
+  color: rgb(97, 97, 97);
+  text-align: left;
+  background-color: rgb(196, 224, 161);
+}
 
 
-
-
-/* The sidebar menu */
-.sidenav {
-    
+/* SIDEBAR NAVIGATION */
+.sidenav {  
     width: 75px; /* Set the width of the sidebar */
     border-radius: 20px;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -559,19 +507,18 @@ div.gallery img {
     stroke: red;
     stroke-width: 20px;
   }
-  .sidenav:hover{
-    opacity:100%;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 8px;
-    text-decoration: none;
-    color: rgb(89, 124, 80);
-    display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: rgb(28, 49, 23);
-  }
+
+.sidenav:hover{
+  opacity:100%;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 8px;
+  text-decoration: none;
+  color: rgb(89, 124, 80);
+  display: block;
+}
+
+.sidenav a:hover {
+  color: rgb(28, 49, 23);
+}
